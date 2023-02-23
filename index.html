@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css.css" />
+    <title>My Website</title>
+  </head>
+  <body>
+    <sextion id="nav">
+      <nav class="nav">
+        <div class="logo">
+          <img
+            src="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/a32f81155cd0d4f16d36aef74f7d2644.png"
+            class="logo-img"
+          />
+
+          <ul class="menu">
+            <li>Home</li>
+            <li>Our Profile</li>
+            <li>Portofolio</li>
+            <li>Message Us</li>
+          </ul>
+        </div>
+      </nav>
+    </sextion>
+    <main>
+      <section id="title">
+        <div class="container">
+          <h1 class="title-h1">Hi Abid welcome to Website</h1>
+          <p class="title-p">ini adalah website latihan pertama</p>
+        </div>
+      </section>
+      <secion id="title-image">
+        <img class="title-image" src="assets/1.jpg" />
+        <img class="title-image" src="assets/2.jpg" />
+        <img class="title-image" src="assets/3.jpg" />
+        <img class="title-image" src="assets/4.jpg" />
+      </secion>
+      <section id="line"></section>
+      <section id="headquarter">
+        <div class="headquarter-h1">
+          <h1>Our Headquarter</h1>
+        </div>
+        <div class="headquarter-img">
+          <div class="headquarter-img-box">
+            <img class="headquarter-img-scale" src="assets/2.jpg" />
+            <p><center>Jakarta</center></p>
+          </div>
+          <div class="headquarter-img-box">
+            <img class="headquarter-img-scale" src="assets/4.jpg" />
+            <p><center>Bandung</center></p>
+          </div>
+          <div class="headquarter-img-box">
+            <img class="headquarter-img-scale" src="assets/3.jpg" />
+            <p><center>Surabaya</center></p>
+          </div>
+        </div>
+      </section>
+      <section id="line"></section>
+      <section id="form-title">
+        <div>
+          <h1 class="headquarter-h1">Message US</h1>
+        </div>
+      </section>
+      <section id="form">
+        <div class="form">
+          <form class="form-input" name="form" action="" method="post">
+            nama : <input type="text" name="nama" placeholder="nama" /> tanggal
+            lahir : <input type="date" name="tanggal" /> Jenis kelamin :
+            <input type="radio" name="jenis_kelamin" value="laki laki" />
+            <input type="radio" name="jenis_kelamin" value="perempuan"/>
+            Pesan: <textarea width="100%" placeholder="pesan anda"></textarea>
+          </form>
+          
+        </div>
+        <div class="output"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <p>Created by Abid Hidayat</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    function plusDivs(n) {
+      showDivs((slideIndex += n));
+    }
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("title-image");
+      if (n > x.length) slideIndex = 1;
+      else if (n < 1) slideIndex = x.length;
+
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+      console.log();
+    }
+    setInterval(() => {
+      plusDivs(1);
+    }, 6000);
+  </script>
+</html>

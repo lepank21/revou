@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    background-color: azure;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#title{
+    margin-top:50px;
+    margin-left: 50px;
+    border: 0px solid blue;
+}
+.container{
+    margin-bottom: 5px;
+    flex-direction: column;
+    display: flex;
+}
+.title-h1{
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-style: oblique;
+}
+.title-p{
+    margin-top: 5px;
+}
+#title-image{
+    margin-left: 50px;
+    display: flex;
+    border: 0px solid blue;
+}
+.title-image{
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+#nav{
+    margin:0;
+    width: 100%;
+    
+}
+.nav{
+    background-color:bisque;
+    border:2px solid black;
+    margin: 0;
+    padding: 0;
+    
+}
+.logo{
+    margin-left: 50px;
+    margin-top: 5px ;
+}
+.logo-img{
+    width: 50px;
+    height: 50px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+    margin-right: 15px;
+    float: right;
+    position: relative;
+    
+}
+li{
+    border: 1px solid black;
+    background-color: aliceblue;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Arial;
+    float:left;
+    text-align: center;
+    width: 100px;
+}
+#line{
+    border: 1px inset black ;
+
+}
+#headquarter{
+    margin-left:50px;
+    border: 0px solid blue;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+}
+.headquarter-h1{
+    font-style: normal;
+    font-size: large;
+    font-weight: bold;
+    font-family: Verdana;
+}
+.headquarter-img{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    justify-content: center;
+}
+.headquarter-img-box{
+    border: 0px solid blue;
+    text-align: center;
+}
+.headquarter-img-scale{
+    margin-left: 30px;
+    margin-right: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+footer{
+    border: 0px solid black;
+    height: 40px;
+}
+.footer{
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 50px;
+    border: 0px solid blue;
+}
+#form{
+    width: 100%;
+    border: 1px solid blue;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#form-title{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 50px;
+   
+}
+.form{
+    margin-top: 30px;
+    width: 50%;
+    border: 1px solid blue
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.output{
+    margin-top: 30px;
+    width: 50%;
+    border: 1px solid blue
+}
+@media screen and (max-width: 600px) {
+    .menu{
+        display: flex;
+        flex-direction: column;     
+    }
+  }
